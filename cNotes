@@ -28,4 +28,35 @@ short: -2^15---> 2^15 -1
 int: -2^31 ---> 2^31 -1
 long: -2^63 ---> 2^63 -1
 
+C primitive variable types:
+	All C primitives are numeric
+	
+	The only difference is floating point vs. integer and size of variable.
+	
+	Size can be platform dependent
+		sizeof(<TYPE>) can be used to find the size in bytes
+		sizeof(int)
+
+	Type		Standard Size(in bytes)
+	int			4
+	short			2
+	long			8	
+	float			4
+	double			8
+	char			1
+
+	All boolean values are numbers
+		0 ==> false
+		anything else ==> true
+
+	Data Types and Variables:
+		Character literals are single characters inside ' '
+			ex. 'a', '*' etc....
+		String literals exists, even though there is no String date type
+			ex. "hello", "you smell"
+
+		Varibables cannot be declared in for loop statements
+		but they can be initialized.
+
+
 
