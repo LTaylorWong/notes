@@ -55,8 +55,17 @@ C primitive variable types:
 		String literals exists, even though there is no String date type
 			ex. "hello", "you smell"
 
-		Varibables cannot be declared in for loop statements
+		Variables cannot be declared in for loop statements
 		but they can be initialized.
+-------------------------------------------------------------
+Aim: Always read the fine print
+Do Now: Open up your editor choice(emacs)
+	write basic "Hello World" program in Java 	
 
-
-
+	(cont. from yesterday)
+	Any variable type can be declared an "unsigned" variable
+	this signifies the variable will never be negative
+		the lower bound of any unsigned variable is 0
+		the upper bound will be greater than the signed version
+		ex. 	unsigned char x
+			0<=x<=255
