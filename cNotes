@@ -86,3 +86,15 @@ Do now: How do you declare/use arrays in java
 		The most important function!!!!!
 		Prints formatted strings
 		printf(<string literal>, <var1>, <var2>.....)
+	Simple printf does not need <var> arguments.
+	printf does not add a new line
+
+	 printf("bob = %f\n", bob); %f:place holder for floating point number
+
+	FORMATTING PLACE HOLDERS
+	Type		Char
+	int		%d
+	long		%ld
+	float		%f
+	double		%lf
+			%0.<x>f will provide x digits after the floating point
