@@ -58,6 +58,7 @@ C primitive variable types:
 		Variables cannot be declared in for loop statements
 		but they can be initialized.
 -------------------------------------------------------------
+9/17/15
 Aim: Always read the fine print
 Do Now: Open up your editor choice(emacs)
 	write basic "Hello World" program in Java 	
@@ -69,3 +70,19 @@ Do Now: Open up your editor choice(emacs)
 		the upper bound will be greater than the signed version
 		ex. 	unsigned char x
 			0<=x<=255
+	#include: C version of import
+	compiling/nameing c files: gcc <file name> -o "<name>"
+-------------------------------------------------------------
+9/18/15
+Aim: A vast array of possiblities
+Do now: How do you declare/use arrays in java
+
+	C files: full code
+	h files: header, function headers, constants/globals
+
+	PATH: location of known exectuabl programs
+	
+	printf
+		The most important function!!!!!
+		Prints formatted strings
+		printf(<string literal>, <var1>, <var2>.....)
