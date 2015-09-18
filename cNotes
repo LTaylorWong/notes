@@ -98,3 +98,6 @@ Do now: How do you declare/use arrays in java
 	float		%f
 	double		%lf
 			%0.<x>f will provide x digits after the floating point
+	char		%c
+	char array	%s
+	pointer		%p
