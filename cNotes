@@ -101,3 +101,22 @@ Do now: How do you declare/use arrays in java
 	char		%c
 	char array	%s
 	pointer		%p
+-------------------------------------------------------------
+9/22/15
+Aim: What's the point of it all?
+Memory Management
+	Memory allocation either happens at compile time 
+	or at run time (dynamic)
+Compiler Allocated Memory
+	Packaged with the binary of the program
+	
+	***There is no standard default value***
+
+	Varibles and arrays are allocated here
+		ex. float a	int b[5]
+	Arrays
+		Arrays are NOT  dynamic
+		Must have a fixed size
+		There is no length function
+		No boundary checking
+	
