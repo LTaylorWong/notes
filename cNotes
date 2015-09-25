@@ -119,4 +119,25 @@ Compiler Allocated Memory
 		Must have a fixed size
 		There is no length function
 		No boundary checking
+----------------------------------------------------------
+9/25/15
+Aim: Now really getting to the point.
 	
+	Pointers-
+		Variables designed to store memory
+		addresses (think references in java)
+	[	
+	 int fred;     fred address = 1000
+	 fred = 86; ---> 1000(address) = 86
+	]
+	[
+	 int *pfred; 		fred pointer
+	 pfred address = 2020
+	 if give pfred value 1000, points to fred
+	]
+	
+	& 	give address operator
+	* 	is used to declare a variables as a pointer type
+		ex. int *p, double *q, char *r..... 
+
+	all pointers are the same size
