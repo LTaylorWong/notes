@@ -172,3 +172,8 @@ Aim: Really REALLY getting to the point
 		int *rp = ray;
 	
 		ray[3] <=> ?
+			   *(rp+3)
+
+	a[i] notation is shorthand for *(a+i)
+
+	a[i] = i[a] 
