@@ -141,3 +141,34 @@ Aim: Now really getting to the point.
 		ex. int *p, double *q, char *r..... 
 
 	all pointers are the same size
+----------------------------------------------------------
+9/28/15
+Aim: Really REALLY getting to the point
+	Do now:
+		1)declare int, double, and char variables
+		2)declare int, double, and char pointers
+		3)Initialize each pointer to the address of the
+		  correpsonding variable
+		4)Print out the pointer's value for each (as
+		  an assigned long)
+		5)Add 1 to each pointer
+		6)Print out pointers again
+
+	*	also used as the de-reference opperator
+			It accesses the value at the memory location
+			stored in the pointer
+
+	Pointer arithmetic
+		int *p = &i;
+		char *c = &i;
+		
+		p++; //will add 4 to p
+		c++; //will add 1 to p
+	
+	Array variables are immutable pointers
+
+	Pointers can be assigned to array variables
+		int ray[5];
+		int *rp = ray;
+	
+		ray[3] <=> ?
