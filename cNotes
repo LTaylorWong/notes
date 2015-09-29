@@ -202,4 +202,9 @@ Aim: Time to stop Stringing you along
 
 	WAYS TO DELCARE STRINGS:
 		char s[256];
-			Normal array declaration
+			Normal array declaration, allocates 256 bytes
+			but nothing is set automatically
+
+		char s[256] = "Imagine";
+			Allocates 256 bytes, pit "Imagine" in the first 
+			7 bytes AND add null at the 8th byte.
