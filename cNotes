@@ -177,3 +177,29 @@ Aim: Really REALLY getting to the point
 	a[i] notation is shorthand for *(a+i)
 
 	a[i] = i[a] 
+------------------------------------------------------------
+9/29/15
+Aim: Time to stop Stringing you along
+	
+	float fray[5];
+	float *fp = fray
+
+	fp------> fray|2.3|2  |81.7|.21|5|
+		       824 828 832	
+	fp = 824
+	*fp = 2.3
+
+	fp + 2 ---> 832
+	*fp + 2 ---> 4.3
+	*(fp + 2) ---> 81.7
+	fp[2] = 81.7
+	fray[2] = 81.7
+
+	Cstrings
+		Strings are charcter arrays that end with a null
+		character (either '' or 0 or '\0')
+		STRING FUNCTION WILL NOT WORK WITHOUT THE TERMINATING NULL
+
+	WAYS TO DELCARE STRINGS:
+		char s[256];
+			Normal array declaration
