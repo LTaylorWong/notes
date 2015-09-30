@@ -227,3 +227,10 @@ Aim: Writing fuctioning code
 Do now: write a program to do the following:
 	1)Create a string and set it to some value
 	2)Find it's length
+
+	All c functions are "pass by value"
+		a parameter is a copy of the variable passed into 
+		the function. The original varaible is not touched.
+
+	fuction headers
+		<return type> name (<parameters>)
