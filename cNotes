@@ -208,3 +208,22 @@ Aim: Time to stop Stringing you along
 		char s[256] = "Imagine";
 			Allocates 256 bytes, pit "Imagine" in the first 
 			7 bytes AND add null at the 8th byte.
+	
+
+		char s[] = "Tuesday";
+			Allocates 8 bytes, and puts "Tuesday" in the first
+			7 bytes AND add null at the 8th byte.
+		char *s = "Mankind";
+			Allocates 8 bytes, and puts "Tuesday" in the first
+			7 bytes AND add null at the 8th byte. s is a pointer
+			variable instead of an array. 		
+			
+		You can only assign strings with = at declaration
+			char s[] = "zero" //ok
+			s = "seven"        //not ok
+------------------------------------------------------------------------
+9/30/15
+Aim: Writing fuctioning code
+Do now: write a program to do the following:
+	1)Create a string and set it to some value
+	2)Find it's length
