@@ -234,3 +234,36 @@ Do now: write a program to do the following:
 
 	fuction headers
 		<return type> name (<parameters>)
+---------------------------------------------------------------------
+10/1/15
+	You must declare a function before you can use it (like netlogo)
+
+	1) write entire code in correct order
+	2)write the fuction headers at the to of your code, 
+		and the provide full definition later
+	3)put all function headers in a .h file, then include 
+		in the .c file
+
+	string.h
+		C library that includes useful string functions
+		
+		All the fuctions assume that the parameter strings are always 
+		null-terminating
+
+	int strlen(char *s)
+		returns the number of characters form the sttar of s up to
+		but not including the null
+	int strcmp (char *s1, char *s2)
+`		returns 0 id s1 and s2 are identical
+		returns a positive number if s1 is greater thatn s2
+	`	returns a negative number if it is less
+	char * strcpy (char *dest, char *source)
+		copies all the charactersup to and inclusding the null
+		returns dest
+	chat * strcat(char *s1, char *s2)
+		appends the characters up to and indulding the terminating
+		null in s2 at the end of s1
+		returns s1
+	Many string functions have a "strn" version, these take an extra
+	parameter that set a limit to the number of bytes you will look 
+	at in a string
