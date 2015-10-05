@@ -251,17 +251,17 @@ Do now: write a program to do the following:
 		null-terminating
 
 	int strlen(char *s)
-		returns the number of characters form the sttar of s up to
+		returns the number of characters form the start of s up to
 		but not including the null
 	int strcmp (char *s1, char *s2)
-`		returns 0 id s1 and s2 are identical
+`		returns 0 if s1 and s2 are identical
 		returns a positive number if s1 is greater thatn s2
 	`	returns a negative number if it is less
 	char * strcpy (char *dest, char *source)
-		copies all the charactersup to and inclusding the null
+		copies all the characters up to and including the null
 		returns dest
 	chat * strcat(char *s1, char *s2)
-		appends the characters up to and indulding the terminating
+		appends the characters up to and including the terminating
 		null in s2 at the end of s1
 		returns s1
 	Many string functions have a "strn" version, these take an extra
