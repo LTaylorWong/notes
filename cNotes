@@ -267,3 +267,9 @@ Do now: write a program to do the following:
 	Many string functions have a "strn" version, these take an extra
 	parameter that set a limit to the number of bytes you will look 
 	at in a string
+----------------------------------------------------------------------
+10/6/15
+separate compilation
+	you can combine multiple c files inta a c program be including
+	them all in gcc command
+
