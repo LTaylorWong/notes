@@ -327,5 +327,11 @@ Dynamic memory allocation
 		block
 
 		p must be a pointer to the beninning of an 
-		allocated bloack of memory but it does not have to 
+		allocated block of memory, but it does not have to 
 		be the original pointer.
+
+		If x is smaller than the original size of the 
+		allocation, the extra bytes will be released
+
+		If x is larger than the orginal size of the 
+		allocation the extra bytes will be released.
