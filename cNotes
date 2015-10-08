@@ -272,4 +272,39 @@ Do now: write a program to do the following:
 separate compilation
 	you can combine multiple c files inta a c program be including
 	them all in gcc command
+	
+	you cannot have duplicate functions or global variable names
+	across these files.
+	this includes the main() function.
+---------------------------------------------------------------------
+10/07/15
 
+gcc -c :only compilies, does not create executable file
+creates .o file, do with .c files with no main() function
+file: tell you what type of file it is
+gcc can link .o and .c files together
+
+Make
+	creates compiling instrusctions and setting up dependencies
+
+	looks at your time stamps and will deternmine if it needs
+	to be updated
+
+TARGET:dependencies
+TAB	<rules>
+ex. a.out: main.c dwstring.o
+	   gcc main.c dwstring.o
+dwstring.o: dwstring.h dwstring.c
+	    gcc -c dwstring.c
+------------------------------------------------------------------
+10/08/15
+Aim: if you cant (al)locate your memory...i forget
+
+Dynamic memory allocation
+	malloc(int x)
+		Allocates x bytes of memory (from the heap)
+		
+		Returns the address at the begining of allocation
+		
+		Returns a void *, always typecast to the correct 
+		pointer type	 	
