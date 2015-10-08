@@ -308,3 +308,24 @@ Dynamic memory allocation
 		
 		Returns a void *, always typecast to the correct 
 		pointer type	 	
+
+		int *p;
+		p = (int *)malloc(5 * sizeOf(int));
+
+	calloc(int n, int x)
+		Allocates n * x bytes of memory
+
+		Ensures that each bit is set to 0
+
+		Works like malloc in all other ways
+
+		int *p;
+		p = (int *)malloc(5, sizeOf(int));
+
+	realloc(void *p, int x)
+		Changes the amount of memory allocated to a given 
+		block
+
+		p must be a pointer to the beninning of an 
+		allocated bloack of memory but it does not have to 
+		be the original pointer.
