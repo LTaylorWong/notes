@@ -362,4 +362,21 @@ if you want to use a struct within its owe declaration, you must prototype it fi
 c uses snake case
 
 when memory is not allocated dyanimically it is put on the stack, therefore it will go away after function is done.
+--------------------------------------------------------------------
+10-15
+HOW TO DEAL WITH HEADER FILES WITH INTER-DEPENDENCIES
+
+#define
+	to find and replace
+ex:
+	#define foo 27
+	//whereever foo is used, it will be replaced by 27 NO MATTER WHAT
+	//VALUE CANNOT BE CHANGED
+
+#ifndef (if not defined)
+	STUFF HAPPENS
+#endif
+
+ex:
+	#ifndef foo (if foo is not defined)
 
