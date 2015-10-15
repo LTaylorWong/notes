@@ -320,13 +320,13 @@ Dynamic memory allocation
 		Works like malloc in all other ways
 
 		int *p;
-		p = (int *)malloc(5, sizeOf(int));
+		p = (int *)calloc(5, sizeOf(int));
 
 	realloc(void *p, int x)
 		Changes the amount of memory allocated to a given 
 		block
 
-		p must be a pointer to the beninning of an 
+		p must be a pointer to the beginning of an 
 		allocated block of memory, but it does not have to 
 		be the original pointer.
 
@@ -335,3 +335,31 @@ Dynamic memory allocation
 
 		If x is larger than the orginal size of the 
 		allocation the extra bytes will be released.
+
+
+
+	free 
+		released dyanamiclly allocated memory
+
+		takes one parameter
+
+		every time you call malloc/calloc,
+		must have a corresponding free call
+-------------------------------------------------------------
+10-09
+
+-put struct def in header file
+typedef struct n{
+	int i;
+	struct n *next;
+	} node; 
+-------------------------------------------------------------
+10-13
+ZELDA'S IN TROUBLE, GET LINK!
+
+if you want to use a struct within its owe declaration, you must prototype it first
+
+c uses snake case
+
+when memory is not allocated dyanimically it is put on the stack, therefore it will go away after function is done.
+
