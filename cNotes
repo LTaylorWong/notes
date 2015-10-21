@@ -433,7 +433,28 @@ open - <fcntl.h>
 	if open fails, -1 returned, extra error info can be found in errno
 
 	errno
+		found in <errno.h>
 		gives you error number
 	sterror
 		tells you whats actually wrong
+
+	open(<PATH>, <FLAGS>, <MODE>)
 	
+	mode
+		only used when you make a new file, it is the permissions
+		of the new file, must be a 3 didgit octal number
+
+		octal numbers have a leading 0
+		0644, 0744.....	
+
+	FLAGS
+		determine what you plan to do with the file
+
+		rdonly
+		wronly
+		rdwr
+		append
+		trunc
+		creat
+		excl: only works in combo with create, error will return if
+			you try to create a file that already exists
