@@ -450,11 +450,65 @@ open - <fcntl.h>
 	FLAGS
 		determine what you plan to do with the file
 
-		rdonly
-		wronly
-		rdwr
-		append
-		trunc
-		creat
-		excl: only works in combo with create, error will return if
+		o_rdonly
+		o_wronly
+		o_rdwr
+		o_append
+		o_trunc
+		o_creat
+		o_excl: only works in combo with create, error will return if
 			you try to create a file that already exists
+---------------------------------------------------------------------
+10-22
+AIM: READ YOUR WRITES
+
+Flag Stuff ex:
+EXCL(2048)	TRUNC(1024)	CREAT(512)	APPEND(8)	RDWR(2)		WRONLY(1)	RDONLY(0)
+0		0		1		0		0		0		0
+1		0		0		0		0		0		0
+0		0		0		0		0		1		0
+
+bitwise operators
+	&: and
+	|: or
+	~: not
+	^: xor
+	logical opperators work on each indiviual bit of a value
+
+	char c = 13; //00001101
+	char x = ~c; //11110010
+
+flags
+	each flag is a number, to combine flags we use bitwise or
+
+	wronly = 1 00000001
+	append = 8 00001000
+	wronly|append = 00001001
+
+close - <unistd.h>
+	remove a file from file table
+	returns 0 if sucessfull. returns -1 and set errno if not sucessful
+close(<FILE DESCRIPTOR>)
+
+read- <unistd.h>
+	read data in file
+	read(<FILE DESCRIPTOR>, <BUFFER>, <AMOUNT>)
+	read(fd, buff,n)
+	amount-based on the size of buffer
+	read n bytes from the fd's file and put that data into buff
+	returns the number of bytes actually read
+	returns -1 and sets errno if not
+	
+	BUFFER must be a pointer
+
+write- 
+	write data to a file
+	write(<FILE DESCRIPTOR>, <BUFFER>, <AMOUNT>)
+	write(fd, buff,n)
+	amount-based on the size of buffer
+	write n bytes from the fd's file and put that data into buff
+	returns the number of bytes actually written
+	returns -1 and sets errno if not
+	
+	BUFFER MUST BE A POINTER
+
