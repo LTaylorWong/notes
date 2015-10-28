@@ -511,4 +511,35 @@ write-
 	returns -1 and sets errno if not
 	
 	BUFFER MUST BE A POINTER
+--------------------------------------------------------
+10-26
+umask 
+	shuts off certain permissions
 
+	is applied by using bitwise negation on the mask
+	then bitwise adding to the mose
+		new_permissions = ~mask & mode
+	default mask is 022
+	shuts off write for group and other
+
+lseek
+	set the current position in an open file
+
+	lseek(<FILE DESCRIPTOR>,<OFFSET>,<WHENCE>)
+	WHENCE-position you are measuring the offset from
+	OFFSET- number of bytes to move the position by
+----------------------------------------------------------
+10-28
+aim: i need information, stat!
+
+Do Now: 
+	1)Make a Directory
+	2)Put a few files in that directory and maybe a directory or two
+
+stat- <sys/stat.h>
+	Get information about a file(metadata)
+	
+	stat(<PATH>, <STAT BUFFER>)
+
+		struct stat sb;
+		stat("foo", &sb);
