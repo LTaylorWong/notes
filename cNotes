@@ -544,3 +544,15 @@ stat- <sys/stat.h>
 
 		struct stat sb;
 		stat("foo", &sb);
+
+	stat buffer
+	
+	Must be a buffer to a struct stat
+
+	All the file information gets put into the stat buffer
+
+	Some of the fields in the struct stat:
+		st_size
+			file size in bytes
+		st_uid, st_gid
+			user id, group id
