@@ -556,3 +556,7 @@ stat- <sys/stat.h>
 			file size in bytes
 		st_uid, st_gid
 			user id, group id
+		st_mode
+			file permissions
+		st_atime, st_mtime
+			last access, last modification
