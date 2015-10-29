@@ -560,3 +560,48 @@ stat- <sys/stat.h>
 			file permissions
 		st_atime, st_mtime
 			last access, last modification
+			These are struct time_t variables. We can use
+			functions in time.h to make sense of them
+
+		ctime(<TIME>)
+			TIME is the type time_t *
+			returns time struct as a string
+			has to be a pointer
+		time(<TIME>)
+			TIME is the type time_t *
+			sets a parameter to the current time
+--------------------------------------------------------
+10-29
+
+Directories	
+	a *nix directory i  file contatining the names of the riles within the directory.
+	along iwth basic information like file type.
+
+	Moving files into/out of a directory means changing the 
+	directory file, not actually moving the data
+
+opendir-<dirent.h>	
+	open a director file	
+
+	This will not change the cwd, it only allows your program
+	to read the contents of the directory file.
+
+	opendir(<PATH>);
+		
+	Returns a pointer to a directory stream (DIR *)
+
+readdir - <dirent.h>
+	readdir(<DIRECTORY STREAM>)
+	
+	Returns a pointer to the entry in a directory steam,
+	or NULL is all the entries have already been returned.
+
+	struct dirent - <sys/types.h>
+		Directory struct that contains the information 
+		stored in a directory files.
+
+		Some of the data members
+
+		d_name: Name of file
+		d_type:	File type as int
+
