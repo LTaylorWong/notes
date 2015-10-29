@@ -605,3 +605,7 @@ readdir - <dirent.h>
 		d_name: Name of file
 		d_type:	File type as int
 
+rewinddir - <dirent.h>
+	Resets the directory stream ot hte begining
+
+	rewinddir(<DIRECTORY STREAM>)
