@@ -609,3 +609,45 @@ rewinddir - <dirent.h>
 	Resets the directory stream ot hte begining
 
 	rewinddir(<DIRECTORY STREAM>)
+---------------------------------------------------------
+10-30
+Aim: Puttin, in the puts
+	Command line arguments:
+		int main(int argc, char *argv[])
+
+		program name is considered the first command line argument
+
+		argc
+			number of command line arguments
+		argv
+			array of command line arguments
+
+	scanf - <stdio.h>
+		scanf(<FORMAT STRING>, <VAR 1>, <VAR 2>...)
+
+		Read in data from stdin using the format string to determine strings to determine types
+		
+		Puts data for each variable		
+		
+		Variables must be pointers
+
+	fgets - <stdio.h>
+		read in from a file stream and store it in a string
+
+		fgets(<DESTINATION><BYTES><FILE POINTER>)
+
+		fgets(s, n, f);
+			Reads at most n characters from a file stream f
+			and stores it in s
+
+		File pointer
+
+			FILE * type, more complex than a file descriptor
+
+			stdin is a FILE * variable
+
+		Stops at newLine, end of file, or the byte limit
+
+		Keeps the newLine character as part of the string,
+		append NULL after
+
