@@ -651,6 +651,34 @@ Aim: Puttin, in the puts
 		Keeps the newLine character as part of the string,
 		append NULL after
 ------------------------------------------------------------------------------
-11-2
+11-4
+Aim: Are your processes running? - Then you should go and cath them!
 
+Do Now: run ps and what do you see?
 
+Processes
+	Every running program is a process. A process can
+	create subprocesses, but these are no different from
+	regular processes.
+	
+	A processor can hold 1 process per cylce (per core)
+	"Multitasking" appears to happen because the processor
+	switched between all the active processs quickly.
+	PID
+		Every process has a unique identifier call the PID
+
+		PID 1 is the initial process
+		
+		Each entry in the /proc directory is a current PID
+
+	getpid() - <unistd.h>
+		returns the current process' PID
+
+	fork() - <unistd.h>
+		Creates a separate process based on the current one,
+		the new process is called child, the original is
+		the parent
+
+		The child process is a duplicate of the parent
+		process. All parts of the parent process are copied,
+		including stack and heap memory, and the file table.
