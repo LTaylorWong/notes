@@ -682,3 +682,31 @@ Processes
 		The child process is a duplicate of the parent
 		process. All parts of the parent process are copied,
 		including stack and heap memory, and the file table.
+
+			A quick note on threads: A thread is a separate
+			executable entity similar to a child process,
+			except a thread is not a standalone process.
+			It does not have its own memory space, instead
+			it shares its parents memory.
+	
+		Returns 0 to the child and the child's PID to the parent.
+
+		If a parent's process end before the child, the 
+		chil's new parent PID is set to 1.
+----------------------------------------------------------------------------
+11-5
+Aim: Go fork off (another process)
+
+	wait - <unistd.h>
+		Stops a parent process from running until any child
+		has provided status information to the parent
+		(usually the child has exited)
+		
+		Returns the PID of the child that exited or -1 (errno)
+
+		wait (int *status)
+			the parameter (status) is used to store information 
+			about the process exited
+	
+			WEXITSTATUS(int) will return what the
+			process returned when it exited.
