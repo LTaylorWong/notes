@@ -710,3 +710,18 @@ Aim: Go fork off (another process)
 	
 			WEXITSTATUS(int) will return what the
 			process returned when it exited.
+-------------------------------------------------------------------------
+11-9
+Aim: Time to bring uot the executioner
+
+	waitpid - <unistd.h>
+		Waits for a specific child
+
+		waidpid(pid, statue, options)
+		    pid
+			The pid of the specific child to look for
+		    options
+			can set the behavior for wait, if 0, will 
+			work normally.
+
+
