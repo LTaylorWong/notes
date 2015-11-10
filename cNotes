@@ -723,5 +723,36 @@ Aim: Time to bring uot the executioner
 		    options
 			can set the behavior for wait, if 0, will 
 			work normally.
+-----------------------------------------------------------------------
+11-10
 
+The exec family - <unistd.h>
+	There are a number of c functions that canbe user to run
+	other programs from within our own programs
+
+	Replaces the current process with the new program, any
+	code after a call to an exec fuction will be ignored.
+
+	execl
+		execl(<PATH>,<COMMAND>,<ARGS>, NULL)
+
+		PATH
+			The path to the program (ex: /bin/ls)
+		COMMAND
+			The name of a program
+		ARGS
+			Each command line argument you wish
+			to give the program
+
+			The last argument must be NULL
+
+	execlp
+		execlp(<PATH>,<COMMAND>,<ARGS>,NULL)
+	
+		Works like execl, except it uses the PATH
+		environment variable for commands, so you can use 
+		"ls" as the PATH instead of "/bin/ls"
+
+	execvp
+		execvp(<PATH>, <ARGUMENT ARRAY>)
 
