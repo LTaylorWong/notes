@@ -755,4 +755,28 @@ The exec family - <unistd.h>
 
 	execvp
 		execvp(<PATH>, <ARGUMENT ARRAY>)
+--------------------------------------------------------------------------
+11-12
+Aim: Take this to delimit
 
+	strsep - <string.h>
+		parsing a string with a common delimiter
+		strsep(<SOURCE>,<DELIMITER>)
+	
+		Locates the first occurence of the delimiter in a 
+		string and replaces the character with NULL
+
+		Returns the begining of the original string set the source 
+		string to the string starting at 1 index past the 
+		location of the new NULL
+
+		Since the source variable's value is changed,
+		it must be a pointer to a string.
+
+		char s1[100] = "wow-this-is-cool";
+		char *s2 = s1;
+		
+		strsep(&s2, "-");
+			//replaces the "-" after wow with NULL
+			//returns wow
+			//sets s2 to "this-is-cool"
