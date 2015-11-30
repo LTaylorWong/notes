@@ -830,3 +830,19 @@ Aim: Redirection, how does it...SQUIRREL
 
 				You will lose any reference to the original
 				fd2, that file is closed
+----------------------------------------------------------------------------------
+Aim: Sending mixed signals
+
+Signals
+	Limited way of sending information to a process.
+
+Kill
+	Command Line utility to send a signal to  a process
+	
+	$ kill <PID>
+		Send signal 15 (SIGTERM) to PID
+
+		$ kill -<SIGNAL> <PID>
+			sends SIGNAL to PID
+		
+		
