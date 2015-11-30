@@ -844,5 +844,9 @@ Kill
 
 		$ kill -<SIGNAL> <PID>
 			sends SIGNAL to PID
+
+		$ killall [-<SIGNAL>] <PROCESS>
+			Sends SIGTERM (or SIGNAL if provided) to all processes with
+			PROCESS as the name.
 		
 		
