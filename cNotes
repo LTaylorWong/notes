@@ -849,4 +849,23 @@ Kill
 			Sends SIGTERM (or SIGNAL if provided) to all processes with
 			PROCESS as the name.
 		
+KILL IN C FUCTIONS <signal.h>
+
+	Kill
+		Send a signal to a process in a c program
+
+		kill(<PID>, <SIGNAL>)
 		
+	sighandler
+		To work with signals in a c program you must
+		create a signal handleing function
+
+		static void sighandler(int signo)
+		to exit in a signal handler must run
+		exit(0);
+-----------------------------------------------------
+	signal
+		after you create the function, you attach
+		the signals to it using the signal function
+
+			signal(SIGNUMBER, sighandler)
