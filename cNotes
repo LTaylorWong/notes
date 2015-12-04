@@ -910,4 +910,67 @@ Shared memory - <sys/shm.h><sys/ipc.h><sys/types.h>
 					to 0
 				IPC_EXCL: fail is segment alredy exists and
 					IPC_CREAT is on
+	shmat [shared memory attach]
+		Attach a shared memory segment to a variable.
+		
+		Returns to a pointer to the segment or -1
 
+		shmat(descriptor, address, flags)
+
+			descriptor
+				return vale of shmget
+			address
+				if 0, the OS will provide the appropriate address
+			flag
+				usually 0
+				SHM_RDONLY: make the memory read only
+----------------------------------------------------------------------------
+SOTD: Plush - Stone Temple Pilots
+Aim: Memes
+
+	ftok
+		Generate a key for IPC functions
+
+		ftok(path,x)
+
+			path
+				A path to some file, the file must be accessible 
+				by the program running
+
+			x
+				an int used to generate the key
+
+			The generated key will be same if path and x
+			are the same for separate calls
+
+	shmdt
+		Detach a variable from a shared memory segment
+
+		Returns 0 if successful, or -1 if problem
+
+		shmdt (pointer)
+
+			pointer 
+				The address used to access the segment
+			examples
+				shmdt(p)
+
+	shmctl
+		Each shared memory segment has metadata that can be stored in a 
+		struct (struct shmid_ds)
+
+		Some of that data stored: last access, size, pid of creater,
+		pid of last modification
+
+		Perform operations on the shared memory segment
+
+		shmctl(descriptor, command, buffer)
+		
+			descriptor
+				Return value of shmget
+			Commands:
+				IPC_STAT: populates buffer with information
+
+				IPC_SET: set some of the information for the
+					segment to the info in buffer
+				IPC_RMID: remove a shared memory segment
