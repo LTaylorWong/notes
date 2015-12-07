@@ -988,3 +988,46 @@ Aim: How do we flag down a resource?
 
 			0 is unavailable
 		Most semaphore operations are "atomic" meaning they will not be 		split up into multiple processor instructions 
+
+		OPERATIONS:
+			create a semaphore
+			
+			set an initial value
+
+			Up(S)/ V(S)
+				Release a semaphore to a signal you are done
+				with it's associated resource
+
+				pseudocode:
+					S++
+	
+`			Down(S)/P(S)
+				Attempt to take a semaphore
+
+				If the semaphore is 0, wait for it to be available
+
+				pseudocode:
+					while(S == 0)
+						block
+					S--
+
+		Semaphore Code
+			semget - <sys/types.h> <sys/ips.h> <sys/sem.h>
+
+				Create/ Get access to a semaphore
+
+				This is not the same and UP, semaphore is not modified by segment
+				Returns semaphore descriptor
+
+				semget(<KEY>,<AMOUNT>,<FLAGS>)
+			
+					KEY
+						(use ftok)
+					flags
+						includes permissions for the segment
+			
+						combine with bit wise OR
+
+						IPC_CREAT: create the segment, will 							set all values 
+						to 0
+						IPC_EXCL: fail is segment alredy 							exists and IPC_CREAT is on
