@@ -974,3 +974,17 @@ Aim: Memes
 				IPC_SET: set some of the information for the
 					segment to the info in buffer
 				IPC_RMID: remove a shared memory segment
+-------------------------------------------------------------------------
+SOTD: The General - Dispatch
+Aim: How do we flag down a resource?
+	Semaphors(created by Edsgar Dijkstra)
+		IPC construct used to control access to a shared resource
+		
+		Essentially, a semaphore is a counter that represents
+		how many processes can access a resource at a give time
+
+			If a semaphore has a value of 3, then it can have
+			3 active "users"
+
+			0 is unavailable
+		Most semaphore operations are "atomic" meaning they will not be 		split up into multiple processor instructions 
