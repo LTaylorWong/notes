@@ -1016,7 +1016,8 @@ Aim: How do we flag down a resource?
 
 				Create/ Get access to a semaphore
 
-				This is not the same and UP, semaphore is not modified by segment
+				This is not the same and UP, semaphore is not 
+				modified by segment
 				Returns semaphore descriptor
 
 				semget(<KEY>,<AMOUNT>,<FLAGS>)
@@ -1031,3 +1032,44 @@ Aim: How do we flag down a resource?
 						IPC_CREAT: create the segment, will 							set all values 
 						to 0
 						IPC_EXCL: fail is segment alredy 							exists and IPC_CREAT is on
+--------------------------------------------------------------------------------
+	semctl
+
+		control semaphore, including
+			set the semaphore value
+			remove the semaphore
+			get the current value
+			get information about the semaphore
+
+		semctl(<DESCRIPTOR>,<INDEX>,<OPERATION>,<DATA>)
+			Descriptor
+				The return value of the segment
+			Index
+				The index of the semaphore you want 
+				to control in the semaphore set
+				indentified by the descriptor
+
+			Operation
+				One of the following constants
+
+				IPC_RMID: remove the semaphore	
+				SETVAL: Set the value
+				GETVAL:return the value
+				IPC_STAT:populate buffer with
+					info abt the semaphore
+
+			Data
+				Variable for setting/storing info 
+				abt the semaphore
+				(union semun)
+
+			union - must be declared
+
+			union semun {
+				int val;
+				struct semid_ds *buff;
+				unsigned short *array;
+				struct seminfo *_buf;
+				};
+					val: used to set initial value
+					buf: buffer for IPC_STAT
