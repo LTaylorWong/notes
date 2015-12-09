@@ -1085,7 +1085,7 @@ semop
 			struct sembuf{
 				short sem_op;
 				short sem_num;
-				short sem_flag;
+				short sem_flg;
 			};
 
 			sem_num
@@ -1093,4 +1093,18 @@ semop
 			sem_op:
 				-1: Down
 				1: Up
-				
+					Any -/+ number will work,
+					you will be requesting/releasing that 
+					value from the semaphore
+
+				0: Block until semaphore reaches 0
+
+			sem_flag
+				Provide further options
+
+				SEM_UNDO: Allow the OS to undo the 
+					given operation. Useful in the event
+					that a program exits before it could 
+					release a semaphore
+				IPC_NOWAIT: Instead of waiting for a semaphore
+					return error		
