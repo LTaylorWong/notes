@@ -1029,9 +1029,10 @@ Aim: How do we flag down a resource?
 			
 						combine with bit wise OR
 
-						IPC_CREAT: create the segment, will 							set all values 
-						to 0
-						IPC_EXCL: fail is segment alredy 							exists and IPC_CREAT is on
+						IPC_CREAT: create the segment, will 							
+						set all values to 0
+						IPC_EXCL: fail is segment alredy 							
+						exists and IPC_CREAT is on
 --------------------------------------------------------------------------------
 	semctl
 
@@ -1073,3 +1074,23 @@ Aim: How do we flag down a resource?
 				};
 					val: used to set initial value
 					buf: buffer for IPC_STAT
+---------------------------------------------------------------
+semop
+	Perform semaphore operations
+
+	semop(<descriptor>,<operation>,<amount>)
+		Operation
+			a pointer to a struct sembuf value
+
+			struct sembuf{
+				short sem_op;
+				short sem_num;
+				short sem_flag;
+			};
+
+			sem_num
+				The index of the semaphore u are working on
+			sem_op:
+				-1: Down
+				1: Up
+				
