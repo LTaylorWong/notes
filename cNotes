@@ -1107,4 +1107,15 @@ semop
 					that a program exits before it could 
 					release a semaphore
 				IPC_NOWAIT: Instead of waiting for a semaphore
-					return error		
+					return error
+-----------------------------------------------------------------
+12-14
+Pipe
+	A conduit between 2 separate processes.
+
+	Pipes have 2 ends, a read end and a write end.
+
+	Pipe are ONE directional.
+
+	You can transfer any data you like through a 
+	pipe using read/write.		
