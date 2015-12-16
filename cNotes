@@ -1174,4 +1174,9 @@ Server/Client Program paradigms
 
 		Basic Handshake procedure:
 			1) Server creates a names pipe
-				(well known pipe)		
+				(well known pipe)
+			2) Server waits for a connection
+			3) Client creates a private pipe
+			4)Client connects to the server and sends 
+			the private pipe's name
+			5)		
