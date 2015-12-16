@@ -1157,4 +1157,21 @@ Aim: A pipe by any other name...
 		mkfifo(<name>,<permissions>)
 
 		FIFOs will block open until both ends have connection
-		
+----------------------------------------------------------
+12-16
+SOTD: cantaloop - US3
+Aim: always remember to tip your servers
+
+Server/Client Program paradigms
+				
+	Handshake
+		A procedure to ensure that a connection
+		has been established
+
+		Both ends of the connection must verify
+		that they can send and receive data from
+		each other.
+
+		Basic Handshake procedure:
+			1) Server creates a names pipe
+				(well known pipe)		
