@@ -1179,4 +1179,10 @@ Server/Client Program paradigms
 			3) Client creates a private pipe
 			4)Client connects to the server and sends 
 			the private pipe's name
-			5)		
+			5)Client waits for a connection
+			6)Server receives the client's message and
+			removes the WKP
+			7)Server connects to the client pipe, sending
+			an initial acknowledgment message.
+			8)Client receives server's messages, removes 
+			it private pipes.		
