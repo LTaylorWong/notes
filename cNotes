@@ -1185,4 +1185,35 @@ Server/Client Program paradigms
 			7)Server connects to the client pipe, sending
 			an initial acknowledgment message.
 			8)Client receives server's messages, removes 
-			it private pipes.		
+			its private pipes.
+
+int server_handshake(int *from_client){
+int to_client;
+char line[100];
+
+mkfifo("mario", 0644);
+*from_client = open("mario", O_RDONLY);
+read(*from_client, line, sizeof(line));
+printf("<server> got connection req: %s\n", line);
+remove("mario");
+
+to_client = open(line, O_WRONLY);
+strncopy(line, "its-a-me, mario!", sizeof(line));
+write(to_client, line, sizeof(line));
+
+return to_client;
+}
+
+
+
+int main(){
+int to_client;
+int from_client;
+
+to_client = server_handshake(&from_client);
+
+
+return 0;
+}	
+
+	
