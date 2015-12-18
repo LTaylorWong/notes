@@ -1215,5 +1215,26 @@ to_client = server_handshake(&from_client);
 
 return 0;
 }	
+------------------------------------------------------
+Basic Server
+1)Basic Handshake
+2)Server gets data from client, "processes" it and sends
+	back a response
+3)Once the client exit, the server recreates the WKP
+	removes the old client connections and the steps	
+	restart
 
-	
+Forking Server
+	Main server forks off a dedictaed subserver for each 
+	client connection
+
+	Allows for multiple simultaneous clients.
+
+	Handshake procedure is modified on the server:
+		1-6 are the same
+		7) server forks of a subserver
+		8) SUBSERVER connects to client pipe
+
+	After Handshake:
+		Main server creates a new WKP and waits 
+		for a new client
