@@ -1238,3 +1238,74 @@ Forking Server
 	After Handshake:
 		Main server creates a new WKP and waits 
 		for a new client
+
+Central dispatch server
+	Main server handles all incoming connections
+
+	Subservers are forked of to handle outgoing
+	connections
+-----------------------------------------------------
+1-4
+SOTD: Paranoid Andriod - Radiohead
+
+Aim: Cisco in an hour
+
+Do Now: What need to happen in order for 2 computers to commincate with each other?
+
+OSI 7 Layer Model
+	Used to help conceptualize the different parts of network connections
+	
+	The top layer is the most concrete, with each subsequent layer
+	becoming more abstract (relying less on the phsyical connections and more on
+	code).
+
+	The Layers:
+		1. Physical
+		2. Data Link
+		3. Network
+		4. Transport
+		5. Session
+		6. Presentation
+		7. Application
+
+	Physical Layer
+		How Computers are physically connected
+
+		Things life electrons running across wires etc.
+
+		History of wired connections.
+
+		Thicknet
+			A single coaxial cable run throughout
+			the network, "vampire" go into the cable
+			and leech the data out
+		Thinnet
+			A single coaxial cable run throughout
+			the network,
+			T-Junctions used to splice connections
+
+		In both, Data is sent to all computers
+
+		Each computer added increases the power drain on the
+		entire system, degrading service.
+
+		
+--------------------------------------------------------------------------------------
+SOTD: Virtual Insanity - Jamiroqui
+Aim: Cisco in an Hour Part II: Electric Boogaloo
+
+		Token Ring
+			Each Computer is connected in a ring to each other
+
+			Only one computer has control of the network 
+			resources at a time. This is called 
+			"Having the token"
+
+			The network sends the token throughout the ring
+			which contains the identity of the computer
+			with the token. All other computers must wait
+			to use the network
+
+			NO POSSIBILTY OF COLLISIONS
+
+
