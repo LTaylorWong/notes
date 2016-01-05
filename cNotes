@@ -1308,4 +1308,13 @@ Aim: Cisco in an Hour Part II: Electric Boogaloo
 
 			NO POSSIBILTY OF COLLISIONS
 
+		Ethernet
+			Multiple Computers connect to a single
+			hub or switch.
 
+			Hub
+				Broadcass the data to all the computers
+
+			Switch
+				Sends data to a specific computer
+				(Needs to look at Data Link Layer)
