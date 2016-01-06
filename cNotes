@@ -1318,3 +1318,16 @@ Aim: Cisco in an Hour Part II: Electric Boogaloo
 			Switch
 				Sends data to a specific computer
 				(Needs to look at Data Link Layer)
+----------------------------------------------------------------------------
+SOTD: Break Through - The Doors
+Aim: Cisco in an Hour Part III: in 3-D!
+
+	Data Link Layer:
+		Point-to-point transmission between devices on the
+		same (local) network
+
+		Each device is given a unique 6-byte MAC
+		(Media Access Control) address, this is set on
+		each network card when they aer made.
+
+
