@@ -1346,3 +1346,16 @@ Aim: Cisco in an Hour Part III: in 3-D!
 			MTU
 			  Maximum Transmission Unit
 			  1500 Bytes for ethernet
+----------------------------------------------------------------------
+1-7
+SOTD: Bohemian Rhapsody - Queen
+Aim: Cisco in an hour IV: A New Hope
+
+Network Layer (3)
+	Transmission of data between two separate networks
+
+	Major features of this layer are addressing, 
+	routing and packet fowarding.
+
+	Is not concerned with whether or not data was
+	sent successfully (connectionless).
