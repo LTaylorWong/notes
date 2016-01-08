@@ -1359,3 +1359,29 @@ Network Layer (3)
 
 	Is not concerned with whether or not data was
 	sent successfully (connectionless).
+
+	IP (internet protocol) addresses
+		IPv4: 4 byte address
+			[0-255].[0-255].[0-255].[0-255]
+
+	Routing is made easier by having IP addresses 
+	distributed in blocks
+----------------------------------------------------------------
+1-8
+Aim: Cisco in an hour V for Vendetta
+	ARP
+		Address Resolution Protocol
+		Tanslates IP <--> MAC
+		Handled by each individual network separately
+	Data is broken into packets
+		<header info> <packet length> <fragment checksum>
+
+		<time-to-live> <protocol> <header checksum>
+
+		<source> <destination> <...> <data>
+
+		Header info: pack type (IPv4/6), header length
+		Fragment info: Full payloads may be broken up,
+				this will have the total # of fragments
+				as well as which fragment the
+				packet contains.
