@@ -1385,3 +1385,103 @@ Aim: Cisco in an hour V for Vendetta
 				this will have the total # of fragments
 				as well as which fragment the
 				packet contains.
+		Time-to-live: Max # of hops before the packet dies.
+		Protocol: TCP/UDP...
+		...:optional information depending on type of packet		
+		Header checksum:
+		
+		IP MTU is 65,535 B
+		
+		IPv6
+			is 20 years old
+			designed to overcome the limitations of IPv4
+			
+			Addresses
+				
+				Address space from 2^32 --> 2^128
+
+				Addresses written as 8 groups of 4
+				hexidecimal digits.
+			
+				87ab:301c:...
+
+				All existing IPv4 addresses can be written
+				like this:
+				0000:0000:0000:ffff:149.89.150.100
+
+			MTU
+				~4.3 billion 
+				also referred to as jumbograms
+
+Transport Layer (4)
+	
+	Computer to Computer connection over a network
+
+	Unconcerned with hte individual hops of
+	layer 3 traffic.
+
+	Each destination address has multiple ports
+		65,535 ports
+
+	ports < 1024 are well known, reserved ports
+----------------------------------------------------------------
+1-12
+SOTD: Another Day - Pomplamoose
+
+Aim: Cisco in an Hour VII: Adrians's Revenge
+
+Transport Layer (4)
+	
+	Computer to Computer connection over a network
+
+	Unconcerned with hte individual hops of
+	layer 3 traffic.
+
+	Each destination address has multiple ports
+		65,535 ports
+	
+	ports < 1024 are well known, reserved ports
+	
+	Regulated by the Internet Assigned Numbers
+	Authority (IANA)
+
+	TCP
+		Transmission Control Protocol
+
+		Reliable Connection
+
+		Guarantees delivery of data
+
+		Data is considered a continouous stream that
+		arrives in the order that it is sent
+		(which may no  be true in the upper layers)
+
+		Connections are established using a 
+		3-way handshake:
+			Server "binds" to a port and waits
+			1. Client send a SYN message to the server
+			2. Server sends the Client a SYN_ACK message
+			3. Client sends an ACK message to the server
+
+			Once this is done the connection is 
+			established and data can flow freely
+			between the two machines.
+
+	UDP
+		User Datagram Protocol
+
+		Does not require an explicit connection
+
+
+		Data is sent as discrete datagrams with a 
+		set size (as opposed to a continuous stream)
+
+		Datagrams may be dropped or received
+		out of order
+
+		UDP connections are faster because they
+		do not need to be reassembled at the
+		other end.
+
+		Assumes that any kinda of error checking
+		is handled at levels 5-7
