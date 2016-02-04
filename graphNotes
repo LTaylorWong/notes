@@ -1,0 +1,31 @@
+2-3
+Image file formats
+
+COMPRESSED        vs       UNCOMPRESSED
+-smaller	       	   -full map of pixel values
+-often less info
+PNG			   bmp
+JPEG/JPG                   tiff
+GIF                        svg
+			   raw
+
+LOSSY             vs       LOSSLESS
+-loses			   -contains all			
+some of the 		   the original info
+original info
+JPEG			   bmp
+			   tiff
+			   PNG
+
+RASTER	          vs	   VECTOR
+represts image		   image is represented
+as a grid of               as a list of drawing
+pixel                      instructions
+			   scale well
+			   svg
+
+
+netpbm
+-rastor
+-losses
+-uncompressed
