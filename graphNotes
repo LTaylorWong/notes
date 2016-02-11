@@ -29,3 +29,129 @@ netpbm
 -rastor
 -losses
 -uncompressed
+
+{HEADER}
+[P3
+XRES YRES (dimensions)
+MAX_COLOR_VAL]
+R G B R G B.... 
+-------------------------------------------------------
+2-5
+Bresenhams' line alogorithm
+
+0=Ax+By+ C
+A = deltaY
+B = -deltaX
+C = (deltaX)b
+---------------------------------------------------------
+2-9
+***OCTANT UNO***
+(x,y)-->(x+1,y) or(x+1,y+1)
+mp = (x+1,y+.5)
+f(x+1,y+.5),
+=0: on the line, draw either pixel
+<0: above the line, draw lower pixel (x+1,y)
+>0: below the line, draw higher pixel (x+1,y+1)
+
+FIRST DRAFT:
+	(x0,y0)-->(x1,y1)
+	x=x0 y=y0
+	while(x<=x1)
+	   plot(x,y)
+	   d = f(x+1,y+.5)
+	   if(d>0)
+		y+=1
+	   x+=1
+
+initial value of d: 
+f(x0+1,y0+.5)
+d = A(x0+1)+B(y0+.5)+C
+d = Ax0 + A + By0 + .5B + C
+d = 0 + A + .5B
+d = A + .5B
+
+SECOND DRAFT:
+	(x0,y0)-->(x1,y1)
+	x=x0 y=y0
+	d = A + .5B
+	while(x<=x1)
+	   plot(x,y)
+	   if(d>0)
+		y+=1
+	   x+=1
+	d = f(x+1,y+.5)
+
+if d < 0
+x-->x+1 y-->y
+f(x+1,y)
+d = A(x+1)+By+C
+d = Ax + A + By + C
+d = d + A
+
+if d > 0 
+x-->x+1 y-->y+1
+f(x+1,y+1)
+d = A(x+1)+B(y+1)+C
+d = Ax + A + By + B + C
+d = d + A + B
+
+THIRD DRAFT:	
+	(x0,y0)-->(x1,y1)
+	x=x0 y=y0
+	A = y1-y0 B = -(x1-x0)
+	d = A + .5B
+	while(x<=x1)
+	   plot(x,y)
+	   if(d>0)
+		y+=1
+		d+=B
+	   x+=1
+	   d+=A
+---------------------------------------------------------
+2-10
+FOURTH DRAFT:	
+	(x0,y0)-->(x1,y1)
+	x=x0 y=y0
+	A = y1-y0 B = -(x1-x0)
+	d = 2A + B
+	while(x<=x1)
+	   plot(x,y)
+	   if(d>0)
+		y+=1
+		d+=2B
+	   x+=1
+	   d+=2A
+
+***OCTANT DOS***
+1<m
+(x,y+1)
+(x+1,y+1)
+mp(x+.5, y+1)
+Ax + By + c + .5A + B
+d = .5A+B
+	
+if d < 0: (x,y) to the left
+if d > 0: (x,y) to the right
+
+	(x0,y0)-->(x1,y1)
+	x=x0 y=y0
+	A = y1-y0 B = -(x1-x0)
+	d = A + 2B
+	while(y<=y1)
+	   plot(x,y)
+	   if(d<0)
+		x+=1
+		d+=2A
+	   y+=1
+	   d+=2B
+
+octant 1 & 5 same
+Octant 2 & 6 same
+octant 3 & 7 same
+octant 4 & 8 same
+
+octant 8
+-1 < m < 0
+(x+1,y)
+(x+1,y-1)
+mp(x+.5, y++1)
