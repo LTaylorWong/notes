@@ -155,3 +155,13 @@ octant 8
 (x+1,y)
 (x+1,y-1)
 mp(x+.5, y++1)
+-----------------------------------
+LOOK @ DWSOURCE
+struct point_t{
+int red
+int green
+int blue
+}point_t;
+
+typedef struct point_t color;
+typedef struct point_t screen[x][y];
