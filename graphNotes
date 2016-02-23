@@ -165,3 +165,33 @@ int blue
 
 typedef struct point_t color;
 typedef struct point_t screen[x][y];
+--------------------------------------
+2-22
+USING MATRICES
+
+Point matrix
+
+while(i<points.length-2)
+	draw-line(points[i],points[i+1])
+	i+=2
+
+edges = new_matrix()
+addedge(edges, p0,p1)
+....
+draw_edges(edges)
+----------------------------------
+2-23
+woooo matrix math review
+
+scalar multiplication
+-distribute the scalar to the matrix
+
+matrix multiplication
+-not communitive
+-columns1 must equal rows2
+AxB * BxC = AxC
+
+
+(a+2b+3c),(4a+5b+6c)
+(d+2e+3f),(4d+5e+6f)
+(g+2h+3i),(4g+5h+6i)
