@@ -213,5 +213,5 @@ Translating
 |0001|
 
 Rotating
-(x,y,z)---R(z,thetha)--->(xcos(theta)-ysin(theta),ycos(theta)+xcos(theta),z)
+(x,y,z)---R(z,thetha)--->(xcos(theta)-ysin(theta),ycos(theta)+xsin(theta),z)
 
