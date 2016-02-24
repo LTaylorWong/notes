@@ -207,3 +207,11 @@ Scaling
 
 Translating
 (x,y,z)---T(a,b,c)--->(x+a,y+b,z+c)
+|100a|
+|010b|
+|001c|
+|0001|
+
+Rotating
+(x,y,z)---R()
+
