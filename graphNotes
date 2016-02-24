@@ -199,3 +199,9 @@ AxB * BxC = AxC
 Multiplicative identity matrix
 -square
 -diagonals are all 1, all others 0
+--------------------------------------
+2-24
+
+Scaling
+(x,y,z)---S(a,b,c)--->(ax,by,cz)
+
