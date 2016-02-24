@@ -205,3 +205,5 @@ Multiplicative identity matrix
 Scaling
 (x,y,z)---S(a,b,c)--->(ax,by,cz)
 
+Translating
+(x,y,z)---T(a,b,c)--->(x+a,y+b,z+c)
