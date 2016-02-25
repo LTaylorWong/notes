@@ -218,3 +218,9 @@ Rotating
 |sin(theta) cos(theta)  0 0|
 |0            0         1 0|
 |0            0         0 1|
+
+(x,y,z)---R(x,theta)--->(x,ycos(theta)-zsin(theta),ysin(theta)+zcos(theta))
+|1            0         0        0|
+|0       cos(theta) -sin(theta)  0|
+|0       sin(theta) cos(theta)   0|
+|0            0         0        1|
