@@ -230,3 +230,15 @@ Rotating
 |0            1         0        0|
 |sin(theta)   0     cos(theta)   0|
 |0            0         0        1|
+-----------------------------------------------------------------------------
+2-25
+Applying transformations
+E0: Edge Matrix 
+T: Translate Matrix
+S: Scale Matrix
+R: Rotation Matrix
+
+T*E0 = E1 [translated]
+S*E1 = E2 [translated then scaled]
+R*E2 = E3 [translated then scaled then rotated]
+E3 = (R*S*T)*E0
