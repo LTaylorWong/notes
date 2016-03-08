@@ -261,4 +261,5 @@ Hermite Curve
 p0,p1: endpoints
 r0,r1: rates of change at each endopoint
 
+f(t) = at^3 + bt^2 + ct + d : points on the curve
 
