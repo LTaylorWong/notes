@@ -258,8 +258,13 @@ f(t)=X0+ t(deltaX)
 3-8
 Hermite Curve
 
+INPUTS
 p0,p1: endpoints
 r0,r1: rates of change at each endopoint
 
 f(t) = at^3 + bt^2 + ct + d : points on the curve
+f'(t) = 3at^2 + 2bt + c : rates of change
 
+when t = 0
+	f(t) = d
+	f'(t) = c
