@@ -283,4 +283,10 @@ r0,r1 /    = at^3 + bt^2 + ct + d
 [0010] [c] = [c      ] = [r0]
 [3210] [d]   [3a+2b+c]   [r1]
 
+Bezier Curve
 
+Inputs:
+p0 , p3: endpoints
+p1 , p2: 
+
+when you add a degree you add an extra input
