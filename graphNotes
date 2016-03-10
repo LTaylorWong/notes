@@ -287,6 +287,19 @@ Bezier Curve
 
 Inputs:
 p0 , p3: endpoints
-p1 , p2: 
+p1 , p2: other points
 
 when you add a degree you add an extra input
+
+p(t) = (1-t)p0 + t(p1)
+
+
+QUADRATICS:
+r(t) = (1-t)r0 + t(r1)
+r0(t) = (1-t)p0 + t(p1)
+r1(t) = (1-t)p1 + t(p2)
+
+
+
+
+
