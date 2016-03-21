@@ -330,3 +330,12 @@ t(t(at + b)+c)+d
 
 Box, Sphere, torus, bezier/hermite surfaces
 
+BOX:
+input: width, height, depth, (x,y,z)[upper/left/front corner]
+
+SPHERE:
+input: 
+       [rcos(theta)]
+       [rsin(theta)]
+       [    0      ]
+       [    1      ]
