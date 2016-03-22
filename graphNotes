@@ -337,7 +337,7 @@ SPHERE:
 input: 
 [1  0    0  0]     [rcos(theta)]    x = rcos(theta)
 [0 cos -sin 0]     [rsin(theta)]    y = rsin(theta)cos(fi) 
-[0 sin cos  0]  x  [    0      ] =  z = rsin(thea)sin(fi)
+[0 sin cos  0]  x  [    0      ] =  z = rsin(theta)sin(fi)
 [0  0   0   1]     [    1      ]   
 
 theta = angle of circle creation
@@ -352,5 +352,13 @@ if theta: 0->pi
 for p: 0->1
 	for t: 0->1
    	    x = rcos(piT)
-	    y = rsin(piT)cos(fi)	
-	    z = rsin(piT)sin(fi)
+	    y = rsin(piT)cos(2piP)	
+	    z = rsin(piT)sin(2piP)
+
+TORUS:
+
+[1  0    0  0]     [rcos(theta)    ]    x = rcos(theta)
+[0 cos -sin 0]     [rsin(theta) + R]    y = rsin(theta + R)cos(fi) 
+[0 sin cos  0]  x  [    0          ] =  z = rsin(theta + R)sin(fi)
+[0  0   0   1]     [    1          ]   
+
