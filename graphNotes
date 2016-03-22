@@ -335,12 +335,22 @@ input: width, height, depth, (x,y,z)[upper/left/front corner]
 
 SPHERE:
 input: 
-[1  0    0  0]     [rcos(theta)]   x = rcos(theta)
-[0 cos -sin 0]     [rsin(theta)]   y = rsin(theta)cos(fi) 
-[0 sin cos  0]  x  [    0      ] = z = rsin(thea)sin(fi)
+[1  0    0  0]     [rcos(theta)]    x = rcos(theta)
+[0 cos -sin 0]     [rsin(theta)]    y = rsin(theta)cos(fi) 
+[0 sin cos  0]  x  [    0      ] =  z = rsin(thea)sin(fi)
 [0  0   0   1]     [    1      ]   
 
 theta = angle of circle creation
 fi = angle of circle rotation
 
+if theta: 0->2pi
+      fi: 0->pi
 
+if theta: 0->pi
+      fi: 0->2pi 
+
+for p: 0->1
+	for t: 0->1
+   	    x = rcos(piT)
+	    y = rsin(piT)cos(fi)	
+	    z = rsin(piT)sin(fi)
