@@ -380,3 +380,9 @@ Allows us to draw solid objects and remove hidden surfaces
 
 POLYGON MATRIX
 PM = [[p0,p1,p2],[p2,p3,p0],...]
+
+EM		PM
+plot----------->plot
+drawLine------>drawLine
+drawLines---->drawPolygons
+
