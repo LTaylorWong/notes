@@ -385,4 +385,5 @@ EM		PM
 plot----------->plot
 drawLine------>drawLine
 drawLines---->drawPolygons
-
+addPoint------>addPoint
+addEdge------>addPolygon (add the points counterclockwise)
