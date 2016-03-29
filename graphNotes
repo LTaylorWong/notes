@@ -362,3 +362,18 @@ TORUS:
 [0 sin cos  0]  x  [    0          ] =  z = rsin(theta + R)sin(fi)
 [0  0   0   1]     [    1          ]   
 
+      theta: 0->2pi
+      fi: 0->2pi
+---------------------------------------
+3-29
+Wire Frame/Polygon Meshes
+
+WIREFRAME
+3D object defined by the edges that connect the vertices/points
+Uses the same edge matrix concepts
+
+POLYGON
+3D obeject is defined by the surfaces(typically triangle or quadralateral)
+that cover the object
+Change the edge matrix--->polygon matrix
+Allows us to draw solid objects and remove hidden surfaces
