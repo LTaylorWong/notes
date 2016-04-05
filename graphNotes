@@ -396,5 +396,7 @@ Backface Culling
 Not render and any backwards facing surfaces.
 The surface normal(N) is a vector perpendicular to a plane
 We compare the N to the view vector(camera)(V) 90<theta<270
-
+CALCULATING SURFACE NORMAL
+cross prodect of 2 vectors that share an endpoint,
+and go in differenct directions.
 
