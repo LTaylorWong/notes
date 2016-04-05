@@ -391,5 +391,8 @@ addEdge------>addPolygon (add the points counterclockwise)
 3-30
 Polygon Meshes
 ----------------------------------------------
-4-4
-
+4-5
+Backface Culling
+Not render and any backwards facing surfaces.
+The surface normal(N) is a vector perpendicular to a plane
+ 
