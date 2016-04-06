@@ -399,4 +399,10 @@ We compare the N to the view vector(camera)(V) 90<theta<270
 CALCULATING SURFACE NORMAL
 cross prodect of 2 vectors that share an endpoint,
 and go in differenct directions.
+------------------------------------------
+4-6
+STEP 1: CALCULATING SURFACE NORMAL
+STEP 2: FIND THETA(between surface normal and view vector)
+STEP 3: IF 90<theta<270, THEN DRAW POLYGON
+
 
