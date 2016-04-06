@@ -409,4 +409,7 @@ STEP ONE:
 <AyBz-AzBy,AzBx-AxBz,AxBy-AyBx>
 
 STEP TWO:
-(looking straight at the screen) <0,0,-1>
+(looking straight at the screen) view vector <0,0,-1>
+(N)x(V) = __cos(theta)
+if cos(theta) < 0 then 90<theta<270
+= NxVx+NyVy+NzVz
