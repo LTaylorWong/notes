@@ -405,4 +405,8 @@ STEP 1: CALCULATING SURFACE NORMAL
 STEP 2: FIND THETA(between surface normal and view vector)
 STEP 3: IF 90<theta<270, THEN DRAW POLYGON
 
+STEP ONE:
+<AyBz-AzBy,AzBx-AxBz,AxBy-AyBx>
 
+STEP TWO:
+(looking straight at the screen) <0,0,-1>
