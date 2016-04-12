@@ -427,3 +427,5 @@ DRAWING FRAMEWORK
 		1.Generate the points/polygons and add them to a matrix
 		2.multiply points by current top of the stack
 		3.Draw the points to the screen
+		4.Clear point matrix
+	
