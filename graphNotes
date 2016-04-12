@@ -418,8 +418,12 @@ if cos(theta) < 0 then 90<theta<270
 Relative Coordinate System
 -Currently all of our objects are drawm w respect to the same origin/coordinate system (Global Coordinate System)
 -Each object could have its own coordinate system, each object could have its own origin/coordinate system (relative Coordinate System)
-[2003]
-[0202]
-[0020]
-[0001]
-^modifying to a new coordinate system
+-We will use a STACK to store the coordinate systems
+
+DRAWING FRAMEWORK
+	A.Transformations are applied to the current top of the stack
+	B.The stack is pushed and popped as need be
+	C.Drawing Pipeline
+		1.Generate the points/polygons and add them to a matrix
+		2.multiply points by current top of the stack
+		3.Draw the points to the screen
