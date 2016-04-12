@@ -413,3 +413,13 @@ STEP TWO:
 (N)x(V) = __cos(theta)
 if cos(theta) < 0 then 90<theta<270
 = NxVx+NyVy+NzVz
+-----------------------------------------------
+4-12
+Relative Coordinate System
+-Currently all of our objects are drawm w respect to the same origin/coordinate system (Global Coordinate System)
+-Each object could have its own coordinate system, each object could have its own origin/coordinate system (relative Coordinate System)
+[2003]
+[0202]
+[0020]
+[0001]
+^modifying to a new coordinate system
