@@ -436,4 +436,10 @@ Command Stack Image
 1. Push
 2.translate x,y,z
 3.box x,y,z,w,h,d
-4.	
+4.push
+5.translate
+6.sphere
+7.pop
+8.push
+9.translate
+10.box 	
