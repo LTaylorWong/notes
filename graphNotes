@@ -416,8 +416,10 @@ if cos(theta) < 0 then 90<theta<270
 -----------------------------------------------
 4-12
 Relative Coordinate System
--Currently all of our objects are drawm w respect to the same origin/coordinate system (Global Coordinate System)
--Each object could have its own coordinate system, each object could have its own origin/coordinate system (relative Coordinate System)
+-Currently all of our objects are drawm w respect to 
+the same origin/coordinate system (Global Coordinate System)
+-Each object could have its own coordinate system, 
+each object could have its own origin/coordinate system (relative Coordinate System)
 -We will use a STACK to store the coordinate systems
 
 DRAWING FRAMEWORK
@@ -428,4 +430,10 @@ DRAWING FRAMEWORK
 		2.multiply points by current top of the stack
 		3.Draw the points to the screen
 		4.Clear point matrix
-	
+--------------------------------------------------------------------------------
+4-13
+Command Stack Image
+1. Push
+2.translate x,y,z
+3.box x,y,z,w,h,d
+4.	
