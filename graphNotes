@@ -449,3 +449,12 @@ Compilers
 source code->compiler->machine code
 
 lexer->parser->semantic analyzer->[optimizer]->code generator
+LEXER
+-performs lexical analysis
+-knows the valid symbols of the language
+-creates a token list
+
+PARSER
+-performs syntax analysis
+-knows the grammar of the language
+-creates a syntax tree (tree of dependencies)
