@@ -442,4 +442,10 @@ Command Stack Image
 7.pop
 8.push
 9.translate
-10.box 	
+10.box 
+-------------------------------------------------------
+4-19
+Compilers
+source code->compiler->machine code
+
+lexer->parser->semantic analyzer->[optimizer]->code generator
