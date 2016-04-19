@@ -458,3 +458,5 @@ PARSER
 -performs syntax analysis
 -knows the grammar of the language
 -creates a syntax tree (tree of dependencies)
+
+
