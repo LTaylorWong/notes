@@ -463,3 +463,4 @@ SEMANTIC ANALYZER
 -knows how to map tokens to operations or variables/values
 -knows how to navigate the syntax tree
 -creates a symbol table
+	 a list of operations in the order it needs to perform
