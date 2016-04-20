@@ -464,3 +464,9 @@ SEMANTIC ANALYZER
 -knows how to navigate the syntax tree
 -creates a symbol table
 	 a list of operations in the order it needs to perform
+
+OPTIMIZER
+-
+CODE GENERATOR
+-knows what the operations mean at the assembly/machine level
+-generates the program file
