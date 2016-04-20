@@ -459,4 +459,7 @@ PARSER
 -knows the grammar of the language
 -creates a syntax tree (tree of dependencies)
 
-
+SEMANTIC ANALYZER
+-knows how to map tokens to operations or variables/values
+-knows how to navigate the syntax tree
+-creates a symbol table
