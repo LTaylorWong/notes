@@ -469,4 +469,12 @@ OPTIMIZER
 -
 CODE GENERATOR
 -knows what the operations mean at the assembly/machine level
--generates the program file
+-creates the machine code program file
+--------------------------------------------------------
+4-21
+flex-generates lexer
+bison-(yacc-yet another complier complier)
+
+mdl.l input of flex
+{} what to do when find
+|  or
