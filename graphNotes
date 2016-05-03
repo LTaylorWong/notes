@@ -490,4 +490,5 @@ Animation
 	only done once
 -basename <String>
 	set the start of each frame filename
-	
+-vary <Knob> <F0> <F1> <V0> <V1>
+	how the knob changes over time	
