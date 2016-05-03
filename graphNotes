@@ -478,3 +478,16 @@ bison-(yacc-yet another complier complier)
 mdl.l input of flex
 {} what to do when find
 |  or
+------------------------------------------------------
+5-3
+Animation
+-moving by a factor
+-vary:
+	describe the change of thw knob over time
+	vary factor(start frame #, end frame #, start value, end value)
+-frames <Number>
+	sets total # of frames
+	only done once
+-basename <String>
+	set the start of each frame filename
+	
