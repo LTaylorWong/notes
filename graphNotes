@@ -491,4 +491,10 @@ Animation
 -basename <String>
 	set the start of each frame filename
 -vary <Knob> <F0> <F1> <V0> <V1>
-	how the knob changes over time	
+	how the knob changes over time
+----------------------------------------------------
+5-5
+knobs: move rotate scale
+if command[4]
+
+	
