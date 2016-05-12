@@ -506,3 +506,7 @@ Scanline Conversion
 -(x0,y0) always on line BT
 
 -(x1,y1) always on line BM or TM
+	-changes when y>=M
+
+-first line is BB : (xB,yB)-->(xB,yB)
+-second point 	  : (xB+[delta___],yB+1)-->(xB+[delta 1],yB+1)
