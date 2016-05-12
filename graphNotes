@@ -496,5 +496,13 @@ Animation
 5-5
 knobs: move rotate scale
 if command[4]
-
+--------------------------------------------------
+5-12
+Scanline Conversion
+-filling in a polygon with ho/vert lines
 	
+-identify the TOP, BOTTOM, and MIDDLE for polygon
+
+-(x0,y0) always on line BT
+
+-(x1,y1) always on line BM or TM
