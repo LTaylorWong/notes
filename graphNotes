@@ -510,3 +510,11 @@ Scanline Conversion
 
 -first line is BB : (xB,yB)-->(xB,yB)
 -second point 	  : (xB+[delta___],yB+1)-->(xB+[delta 1],yB+1)
+---------------------------------------------------------------
+5-18
+Per pixel calculation
+Z-buffering(doubles-v precise)
+-keep track of the z-coordinates in a z-buffer
+-before plotting a pixel, check its z value 
+agianst the z-buffer
+-initialize with smallest possible z value
