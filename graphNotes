@@ -550,3 +550,11 @@ ambient, diffuse, specular : Different light sources
 		Lights that come from a specific point
 		Reflection based on objects location
 			relative to the light
+		Diffuse and Specular
+
+I(ambient)
+	Combination of the color of ambient light and the amount
+	and the color the object reflects
+I(diffuse) - Diffuse reflection
+	Point lights are reflected back equally in all directions
+	
