@@ -541,3 +541,12 @@ Lighting Equation:
 I(illumination)
 I = I(ambient) + I(diffuse) + I(specular)
 ambient, diffuse, specular : Different light sources
+
+2 Kinds of light sources
+	-Ambient Light
+		Background light
+		hits every surface evenly 
+	-Point Light(s)
+		Lights that come from a specific point
+		Reflection based on objects location
+			relative to the light
