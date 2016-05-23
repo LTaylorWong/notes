@@ -524,3 +524,20 @@ plot(x,y,z,screen,zb,color)
 drawLine()
 drawPolygons()
 ScanLine()
+-----------------------------------------------------------
+5-23
+Modeling Real Lighting
+Colors are calculated by looking at 
+	1. The reflective properties of each object
+	2. The properties of the light hitting the object
+
+Lighting Equation:
+	-We want to generate a color value for each polygon(or pixel)
+	-If you want a grayscale image, you only have to calculate once	
+	per polygon
+	-If you want a color image, you must calculate for each color value
+	for each polygon
+
+I(illumination)
+I = I(ambient) + I(diffuse) + I(specular)
+ambient, diffuse, specular : Different light sources
