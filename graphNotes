@@ -557,4 +557,7 @@ I(ambient)
 	and the color the object reflects
 I(diffuse) - Diffuse reflection
 	Point lights are reflected back equally in all directions
+	Based on the locations of the light and the object
+I(specular) - Specular Reflection
+	
 	
