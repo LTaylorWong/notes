@@ -564,6 +564,8 @@ I(specular) - Specular Reflection
 
 Reflective Properties		
 ---------------------		
+Represented as the % of light reflected back
+
 
 Quality of Light
 ----------------
