@@ -577,9 +577,15 @@ CALCULATING.....
 Ambient Reflection
 	-color (Ca)
 	-constant of ambient reflection(Ka)
-	I(ambient) = Ca X Ka
+	I(ambient) = CaKa
 
 Diffuse Reflection
-	-
+	-color of point source: Cp
+	-constant of diffuse reflection: Kd
+	I(diffuse) = CpKd X cos(theta)
+		Dot product of L & N
+		we have to turn them into unit vectors (normalizing)
+		L^= each component dived by the magnitude
+	I(diffuse) =  CpKd X L^0N^ 
 
 
