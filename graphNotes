@@ -571,4 +571,15 @@ Quality of Light
 ----------------
 Ambient: represented as a color value(0-255)
 Point Light: represented as a color and a location(x,y,z)
+--------------------------------------------------------------
+5-26
+CALCULATING.....
+Ambient Reflection
+	-color (Ca)
+	-constant of ambient reflection(Ka)
+	I(ambient) = Ca X Ka
+
+Diffuse Reflection
+	-
+
 
