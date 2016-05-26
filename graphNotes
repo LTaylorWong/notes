@@ -587,5 +587,6 @@ Diffuse Reflection
 		we have to turn them into unit vectors (normalizing)
 		L^= each component dived by the magnitude
 	I(diffuse) =  CpKd X L^0N^ 
-
-
+Specular Reflection
+	-
+	I(specular) = CpKs X cos(alpha)
