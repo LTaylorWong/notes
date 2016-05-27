@@ -597,3 +597,14 @@ Specular Reflection
 
 if color value less than 0, turn to 0
 if color value greater than 255, turn to 255
+---------------------------------------------------------
+5-27
+SHADING MODEL
+
+How do we calculate I?
+1. Flat shading
+	Calculate I once per polygon
+2. Goroud shading
+	Calculate vertex normals for each polygon
+	Vertex Normal: The combination of the surface normals
+			of all polygons that share a vertex
