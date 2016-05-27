@@ -594,3 +594,6 @@ Specular Reflection
 		R=2P-L^
 			2[N^(L^0N^)]-L^
 		cos(alpha) = (2[N^(L^0N^)]-L^)0V^
+
+if color value less than 0, turn to 0
+if color value greater than 255, turn to 255
