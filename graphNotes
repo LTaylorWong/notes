@@ -590,3 +590,7 @@ Diffuse Reflection
 Specular Reflection
 	-
 	I(specular) = CpKs X cos(alpha)
+		R^0V^
+		R=2P-L^
+			2[N^(L^0N^)]-L^
+		cos(alpha) = (2[N^(L^0N^)]-L^)0V^
