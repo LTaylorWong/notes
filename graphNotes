@@ -608,3 +608,8 @@ How do we calculate I?
 	Calculate vertex normals for each polygon
 	Vertex Normal: The combination of the surface normals
 			of all polygons that share a vertex
+3. Phong Shading
+	Calculate Vertex normals
+	Interpolate the normal in scanline conversion and drawLine
+	Recalculate I for each pixel
+-----------------------------------------------------------------
