@@ -421,7 +421,7 @@ FD	Name(Path)		Location
 2	input
 
 	Each file is given an integer index, starting at 0, this is 
-	refered to as the file descriptor
+	referred to as the file descriptor
 
 	THere are 3 files that are always open in the table
 	0 or STDIN_FILENO: stdin
