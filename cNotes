@@ -333,7 +333,7 @@ Dynamic memory allocation
 		If x is smaller than the original size of the 
 		allocation, the extra bytes will be released
 
-		If x is larger than the orginal size of the 
+		If x is larger than the original size of the 
 		allocation the extra bytes will be released.
 
 
