@@ -473,7 +473,7 @@ CODE GENERATOR
 --------------------------------------------------------
 4-21
 flex-generates lexer
-bison-(yacc-yet another complier complier)
+bison-(yacc-yet another compiler complier)
 
 mdl.l input of flex
 {} what to do when find
