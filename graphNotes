@@ -516,7 +516,7 @@ Per pixel calculation
 Z-buffering(doubles-v precise)
 -keep track of the z-coordinates in a z-buffer
 -before plotting a pixel, check its z value 
-agianst the z-buffer
+against the z-buffer
 -initialize with smallest possible z value
 -calculate z values for each pixel
 -PLOT:
