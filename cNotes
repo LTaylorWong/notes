@@ -370,7 +370,7 @@ HOW TO DEAL WITH HEADER FILES WITH INTER-DEPENDENCIES
 	to find and replace
 ex:
 	#define foo 27
-	//whereever foo is used, it will be replaced by 27 NO MATTER WHAT
+	//wherever foo is used, it will be replaced by 27 NO MATTER WHAT
 	//VALUE CANNOT BE CHANGED
 
 #ifndef (if not defined)
