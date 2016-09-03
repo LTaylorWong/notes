@@ -74,7 +74,7 @@ Do Now: Open up your editor choice(emacs)
 	compiling/nameing c files: gcc <file name> -o "<name>"
 -------------------------------------------------------------
 9/18/15
-Aim: A vast array of possiblities
+Aim: A vast array of possibilities
 Do now: How do you declare/use arrays in java
 
 	C files: full code
@@ -304,7 +304,7 @@ Dynamic memory allocation
 	malloc(int x)
 		Allocates x bytes of memory (from the heap)
 		
-		Returns the address at the begining of allocation
+		Returns the address at the beginning of allocation
 		
 		Returns a void *, always typecast to the correct 
 		pointer type	 	
@@ -333,7 +333,7 @@ Dynamic memory allocation
 		If x is smaller than the original size of the 
 		allocation, the extra bytes will be released
 
-		If x is larger than the orginal size of the 
+		If x is larger than the original size of the 
 		allocation the extra bytes will be released.
 
 
@@ -370,7 +370,7 @@ HOW TO DEAL WITH HEADER FILES WITH INTER-DEPENDENCIES
 	to find and replace
 ex:
 	#define foo 27
-	//whereever foo is used, it will be replaced by 27 NO MATTER WHAT
+	//wherever foo is used, it will be replaced by 27 NO MATTER WHAT
 	//VALUE CANNOT BE CHANGED
 
 #ifndef (if not defined)
@@ -421,7 +421,7 @@ FD	Name(Path)		Location
 2	input
 
 	Each file is given an integer index, starting at 0, this is 
-	refered to as the file descriptor
+	referred to as the file descriptor
 
 	THere are 3 files that are always open in the table
 	0 or STDIN_FILENO: stdin
@@ -488,7 +488,7 @@ flags
 
 close - <unistd.h>
 	remove a file from file table
-	returns 0 if sucessfull. returns -1 and set errno if not sucessful
+	returns 0 if sucessfull. returns -1 and set errno if not successful
 close(<FILE DESCRIPTOR>)
 
 read- <unistd.h>
@@ -606,7 +606,7 @@ readdir - <dirent.h>
 		d_type:	File type as int
 
 rewinddir - <dirent.h>
-	Resets the directory stream ot hte begining
+	Resets the directory stream ot hte beginning
 
 	rewinddir(<DIRECTORY STREAM>)
 ---------------------------------------------------------
@@ -766,7 +766,7 @@ Aim: Take this to delimit
 		Locates the first occurence of the delimiter in a 
 		string and replaces the character with NULL
 
-		Returns the begining of the original string set the source 
+		Returns the beginning of the original string set the source 
 		string to the string starting at 1 index past the 
 		location of the new NULL
 
@@ -1137,7 +1137,7 @@ Pipe
 		AKA FIFOs
 
 		Same as unnamed pipe except they have names.
-		that can be used to identify them in diferent programs.
+		that can be used to identify them in different programs.
 		
 		mkfifo
 			shell command to make a FIFO
@@ -1307,7 +1307,7 @@ Aim: Cisco in an Hour Part II: Electric Boogaloo
 			with the token. All other computers must wait
 			to use the network
 
-			NO POSSIBILTY OF COLLISIONS
+			NO POSSIBILITY OF COLLISIONS
 
 		Ethernet
 			Multiple Computers connect to a single
