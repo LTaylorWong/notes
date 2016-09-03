@@ -488,7 +488,7 @@ flags
 
 close - <unistd.h>
 	remove a file from file table
-	returns 0 if sucessfull. returns -1 and set errno if not sucessful
+	returns 0 if sucessfull. returns -1 and set errno if not successful
 close(<FILE DESCRIPTOR>)
 
 read- <unistd.h>
